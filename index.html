@@ -9,6 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Trafalgar</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss"></style>
@@ -21,6 +28,7 @@
             },
             colors: {
               bluish: "#5B9BF3",
+              blackish: "#1F1534",
             },
           },
         },
@@ -29,15 +37,41 @@
   </head>
   <body class="font-Mulish">
     <!-- Header  -->
-    <div class="">
-      <nav class="">
-        <div class=""></div>
-        <ul class="">
-          <li class=""></li>
-          <li class=""></li>
-          <li class=""></li>
-          <li class=""></li>
+    <div class="container mx-auto">
+      <nav class="flex justify-between m-4 sm:mx- lg:mx-16">
+        <div class="">
+          <img src="images/logo.png" alt="" class="w-full sm:w-32 lg:w-full" />
+        </div>
+        <ul
+          class="hidden sm:flex sm:gap-4 md:gap-5 lg:gap-8 items-center text-semibold"
+        >
+          <li
+            class="lg:font-bold sm:font-semibold text-gray-400 hover:text-blackish"
+          >
+            Home
+          </li>
+          <li
+            class="lg:font-bold sm:font-semibold text-gray-400 hover:text-blackish"
+          >
+            Find a doctor
+          </li>
+          <li
+            class="lg:font-bold sm:font-semibold text-gray-400 hover:text-blackish"
+          >
+            Apps
+          </li>
+          <li
+            class="lg:font-bold sm:font-semibold text-gray-400 hover:text-blackish"
+          >
+            Testimonials
+          </li>
+          <li
+            class="lg:font-bold sm:font-semibold text-gray-400 hover:text-blackish"
+          >
+            About us
+          </li>
         </ul>
+        <div class="sm:hidden"><i class="text-2xl fa-solid fa-bars"></i></div>
       </nav>
     </div>
   </body>
